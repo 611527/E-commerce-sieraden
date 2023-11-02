@@ -1,15 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './App.css'
+import React from "react";
+import CustomRoutes from "./routes";
 
 function App() {
-  (
-  <Router>
-  <Switch>
-    <Route path="/login" component={Login} />
-    <Route path="/signup" component={Signup} />
-  </Switch>
-  </Router>
-  )
+  return (
+    <div>
+      <CustomRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
